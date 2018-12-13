@@ -1,0 +1,28 @@
+{
+    "name": "spartronics-theme",
+    "description": "A custom-made theme for Spartronics 4915's website.",
+    "version": "1.0.0",
+    "engines": {
+        "ghost": ">=2.0.0"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "Spartronics 4915",
+        "email": "spartronics4915@gmail.com",
+        "url": "https://spartronics4915.com"
+    },
+    "keywords": [
+        "spartronics",
+        "4915",
+        "robotics"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Spartronics4915/spartronics-website.git"
+    },
+    "bugs": "https://github.com/Spartronics4915/spartronics-website/issues",
+    "contributors": "https://github.com/Spartronics4915/spartronics-website/graphs/contributors",
+    "config": {
+        "posts_per_page": 10
+    }
+}

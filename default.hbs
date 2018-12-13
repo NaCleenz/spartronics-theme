@@ -1,0 +1,82 @@
+{{!-- Base template for all pages - contains header and footer HTML --}}
+
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+    {{!-- Document Settings --}}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    {{!-- Base Meta --}}
+    <title>{{meta_title}}</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    {{!-- Styles'n'Scripts --}}
+    <link rel="stylesheet" type="text/css" href="{{asset "built/screen.css"}}" />
+
+    {{!-- This tag outputs SEO meta+structured data and other important settings --}}
+    {{ghost_head}}
+
+</head>
+<body class="{{body_class}}">
+
+    <!--TODO: add social media links on the right-->
+    <div id="header" class="align-center">
+        <div id="header-button">Menu</div>
+        <ul>
+            <img class="logo" src="./home/logo.png" width="35px" height="auto">
+            <li class="has-sub last"><a href="#"><span>ABOUT</span></a>
+                <ul>
+                    <li><a href="#"><span>OUR TEAM</span></a></li>
+                    <li class="has-sub"><a href="#"><span>OUR ROBOTS</span></a>
+                        <ul>
+                            <li class="last"><a href="./about/our-robots/themis-2018.html"><span>THEMIS (2017-18)</span></a></li>
+                            <li class="last"><a href="./about/our-robots/helios-2017.html"><span>HELIOS (2016-17)</span></a></li>
+                            <li class="last"><a href="./about/our-robots/ares-2016.html"><span>ARES (2015-16)</span></a></li>
+                            <li class="last"><a href="./about/our-robots/gaea-2015.html"><span>GAEA (2014-15)</span></a></li>
+                            <li class="last"><a href="./about/our-robots/atlas-2014.html"><span>ATLaS (2013-14)</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><span>OUR HISTORY</span></a></li>
+                    <li><a href="#"><span>ABOUT FIRST</span></a></li>
+                    <li><a href="#"><span>CONTACT US</span></a></li>
+                </ul>
+            </li>
+            <li><a href="./blog.html"><span>BLOG</span></a></li>
+            <li><a href="#"><span>CALENDAR</span></a></li>
+            <li class="has-sub last"><a href="#"><span>COMMUNITY</span></a>
+                <ul>
+                    <li><a href="#"><span>SPONSORS</span></a></li>
+                    <li><a href="#"><span>SUPPORTERS</span></a></li>
+                    <li><a href="#"><span>DONATE</span></a></li>
+                </ul>
+            </li>
+            <li class="has-sub last"><a href="#"><span>MEDIA</span></a>
+                <ul>
+                    <li><a href="#"><span>NEWS COVERAGE</span></a></li>
+                    <li><a href="#"><span>PHOTO AND VIDEO</span></a></li>
+                    <li><a href="#"><span>SOCIAL MEDIA</span></a></li>
+                </ul>
+            </li>
+            <li class="has-sub last"><a href="#"><span>RESOURCES</span></a>
+                <ul>
+                    <li><a href="#"><span>GENERAL</span></a></li>
+                    <li><a href="#"><span>ENGINEERING</span></a></li>
+                    <li><a href="#"><span>PROGRAMMING</span></a></li>
+                    <li><a href="#"><span>MARKETING</span></a></li>
+                    <li><a href="#"><span>CAD</span></a></li>
+                </ul>
+            </li>
+            <a href="https://www.facebook.com"> <img class="icons" src="./home/facebook.svg" width="35px" height="auto"></a>
+            <a href="https://www.twitter.com/spartronics4915"> <img class="icons" src="./home/twitter.svg" width="35px"
+                    height="auto"></a>
+            <a href="https://plus.google.com/115062122395310608300/about"> <img class="icons" src="./home/plus.svg"
+                    width="35px" height="auto"></a>
+            <a href="https://www.instagram.com/spartronics"> <img class="icons" src="./home/instagram.svg" width="35px"
+                    height="auto"></a>
+            <a href="https://www.youtube.com/channel/UCafP7tQu6irqjxNQ_uDED_Q"> <img class="icons" src="./home/youtube.svg"
+                    width="35px" height="auto"></a>
+        </ul>
+    </div>
+</body>
